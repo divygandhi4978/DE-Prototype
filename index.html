@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link as="style"
+        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope:wght@400;500;700;800&amp;family=Noto+Sans:wght@400;500;700;900"
+        onload="this.rel='stylesheet'" rel="stylesheet" />
+    <title>StreamCore</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#13a4ec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101c22",
+                    },
+                    fontFamily: {
+                        display: ["Manrope"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+        <div class="flex h-full grow flex-col">
+            <header
+                class="flex items-center justify-between whitespace-nowrap border-b border-gray-200/50 dark:border-gray-700/50 px-10 py-4">
+                <div class="flex items-center gap-3 text-gray-900 dark:text-white">
+                    <svg class="h-6 w-6 text-primary" fill="none" viewBox="0 0 48 48"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z" fill="currentColor"></path>
+                    </svg>
+                    <h2 class="text-xl font-bold">StreamCore</h2>
+                </div>
+                <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600 dark:text-gray-300">
+                    <a class="hover:text-primary transition-colors" href="index.html">Home</a>
+                    <a class="hover:text-primary transition-colors" href="about.html">About</a>
+                    <a class="hover:text-primary transition-colors" href="contact.html">Contact</a>
+                </nav>
+                <div class="flex items-center gap-2">
+                    <button
+                        class="flex h-10 min-w-[84px] items-center justify-center overflow-hidden rounded-lg bg-primary/20 dark:bg-primary/30 px-4 text-sm font-bold text-primary hover:bg-primary/30 dark:hover:bg-primary/40 transition-colors">
+                        <span class="truncate">Log In</span>
+                    </button>
+                    <button
+                        class="flex h-10 min-w-[84px] items-center justify-center overflow-hidden rounded-lg bg-primary px-4 text-sm font-bold text-white hover:bg-primary/90 transition-colors">
+                        <span class="truncate">Sign Up</span>
+                    </button>
+                </div>
+            </header>
+            <main class="flex flex-1 justify-center py-10 sm:py-16 lg:py-20">
+                <div class="flex max-w-5xl flex-1 flex-col items-center px-4">
+                    <div class="w-full @container">
+                        <div class="flex min-h-[480px] flex-col items-center justify-center gap-6 rounded-xl bg-cover bg-center p-6 text-center text-white"
+                            style='background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBlrEuVp_WpRqdyMCiRtIzMe3gtspKyoImIiOy262utnKVdGcejvVxllfzdU_KQ5Pnvq7-SUUHDzl8jUEM7FoTr__WFdsYiPL6JqqF10Mx9K2ms5rvbdgbq4x1rAfTtGLFM-NZWGSSz0M7yW8NXeey5LMOoXvplYz8mCVkaPUk6TshAonQSWlxQeRxeCL55ArmsAAkfOYKJAETz3OG-MBLvQ0AivXe3QZIpDR_k_kZefu9vog051uWLQzOGJtt2C39F6MNF4-wy22BQ");'>
+                            <div class="flex max-w-2xl flex-col gap-4">
+                                <h1 class="text-4xl font-extrabold tracking-tight md:text-5xl lg:text-6xl">StreamCore:
+                                    Your World, Streamlined</h1>
+                                <p class="text-base text-gray-200 md:text-lg">
+                                    Discover a new way to experience your interests. StreamCore combines content, tools,
+                                    and services into personalized domains, making your digital life more focused and
+                                    rewarding.
+                                </p>
+                            </div>
+                            <button
+                                class="mt-4 flex h-12 min-w-[84px] items-center justify-center overflow-hidden rounded-lg bg-primary px-6 text-base font-bold text-white shadow-lg hover:bg-primary/90 transition-all duration-300 ease-in-out">
+                                <span class="truncate">Get Started</span>
+                            </button>
+                        </div>
+                    </div>
+                    <h2 class="mt-12 text-2xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-3xl">
+                        Explore Your Interests</h2>
+                    <div class="mt-8 grid w-full grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-6">
+                        <a href="content.html"><div
+                            class="flex flex-col gap-4 rounded-lg bg-background-light dark:bg-background-dark p-4 shadow-sm transition-all hover:shadow-md dark:hover:bg-gray-800/50">
+                            <div class="aspect-video w-full overflow-hidden rounded-lg">
+                                <img alt="Study" class="h-full w-full object-cover"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2ZfRTaCDlkWvgXZV-9K2yYuqncPKgCp7lezwsuYBoxRbybg0svepp8n_-IiSemYIck6h9t9dSyB0rwunqz0bcCRFN6e5bAjKIB4DqJTxRlmYrC7zODHZ7ehWB9ihgmCKHUFjv4fYF0WOCdbAJ51hqMDj7qfC9ZaJGwKr7ARAKJfgBu4IXMQYQs3OenBGDdMBjvzsnbe4rnjtXC2Owy8flsFQtymZ9wH1-qRFPoFW4vS8LvwH7m7SRaouMH5ZUrVB_-7oYo6Kg7iKg" />
+                            </div>
+                            <div>
+                                <p class="text-lg font-bold text-gray-900 dark:text-white">Study</p>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Dive into focused learning
+                                    resources.</p>
+                            </div>
+                        </div></a>
+                        <div
+                            class="flex flex-col gap-4 rounded-lg bg-background-light dark:bg-background-dark p-4 shadow-sm transition-all hover:shadow-md dark:hover:bg-gray-800/50">
+                            <div class="aspect-video w-full overflow-hidden rounded-lg">
+                                <img alt="Food" class="h-full w-full object-cover"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiCGYv5oQvKdaVEcFnRI0PhxIOrztlllqtffJb0TgaRivf1LmR2Aw8K7E7lca964sIkwFtD-_LrTj-I7BuVB5ilMGWy-UsosjwvR2H9D0DNT5MhhG3DRMfyPUcf6JNUp-LwCZKQ9MMM6kSMSkZY4Bh4wMPYwYcs__M9IZJ5834l3_EJ6PTUmJX2OKZVniuYToVRQ6VGbBhE7ViOs0FB1lrB3h1wVsKMEDKmrKu3tfllB9gUhBsvfNn3PDAxYJ8vE2im4X5ooVhzEo7" />
+                            </div>
+                            <div>
+                                <p class="text-lg font-bold text-gray-900 dark:text-white">Food</p>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Discover recipes, restaurants, and
+                                    culinary tips.</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex flex-col gap-4 rounded-lg bg-background-light dark:bg-background-dark p-4 shadow-sm transition-all hover:shadow-md dark:hover:bg-gray-800/50">
+                            <div class="aspect-video w-full overflow-hidden rounded-lg">
+                                <img alt="Sports" class="h-full w-full object-cover"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjorLIe_O63nxr7wGgxxmIydNZA4fJ5TEsC0xz461UvAHvba2ckRZOmTWtuEDkFulc01OogSi4wwu8tjNQMpr7xZM61f6VbkLCGWdDMRrawS0e3Ee4aXfRYy-yXLkXMeChSzFFkBFD7dWNEULhtS0be7fQ5csGZLgPJ3tFE5x4qKGEpo1EjlLdgOe00bfBFij8YrVAG9uLt4tXQrWPAbM5tYt8S2Ct3dBJElfAZYlkLe8t_Im31nVPoLeZkCugf0T9YUOJgrDpKokF" />
+                            </div>
+                            <div>
+                                <p class="text-lg font-bold text-gray-900 dark:text-white">Sports</p>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Stay updated on sports news and
+                                    fitness advice.</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex flex-col gap-4 rounded-lg bg-background-light dark:bg-background-dark p-4 shadow-sm transition-all hover:shadow-md dark:hover:bg-gray-800/50">
+                            <div class="aspect-video w-full overflow-hidden rounded-lg">
+                                <img alt="Travel" class="h-full w-full object-cover"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUwcln7V3TX4SjQ48eAmqjFlxR3k6k_9QH3MGbkQFXrLch1gj1oqzkdw_1Iu30HB5Fri0lpFsazZbfii-fI6dK_rUbMH5sI_utnZO54W1WRE2G13OMIYFZ5lkACy2387Nxgev-hfItEc7AzzHgRlh0LyOaxjdIyEfz7gEv4z2f_hceHu5I0tiCXo44ZhP6_XZRaWFEZBPEDpiFkkalAqBtJi4d-hXdLTR1i7mD22ijpGy7s2JD94IVmZBQbTBFlXN47tLlyZJ5zghv" />
+                            </div>
+                            <div>
+                                <p class="text-lg font-bold text-gray-900 dark:text-white">Travel</p>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Plan your next adventure with travel
+                                    guides and tips.</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex flex-col gap-4 rounded-lg bg-background-light dark:bg-background-dark p-4 shadow-sm transition-all hover:shadow-md dark:hover:bg-gray-800/50">
+                            <div class="aspect-video w-full overflow-hidden rounded-lg">
+                                <img alt="Entertainment" class="h-full w-full object-cover"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAfFe3XCP-C47lOc6alEnVx1l5fb73ei_lK9nwI7wftAv9u-sItuariKwh0ZF4gZEz5K1-dj23n8Zl939jBaCSD6IB0OMah8azCLexNinFkPPMZVxLmDmWV6MRSHklghhsRML2q2URy7E4bM8mew0hEbNqO_VhPtFfqUPpkcab9Q1SPucuOZOxoaSSHv92AQwEIcyCjW5tUh2nWq2mo_UDpkSIAEQEqUJZEphs-H_uwYJcNsQ_EXYdc1MGKh-Fm39PKrlgzsSwV65N" />
+                            </div>
+                            <div>
+                                <p class="text-lg font-bold text-gray-900 dark:text-white">Entertainment</p>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Explore movies, music, and
+                                    entertainment trends.</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex flex-col gap-4 rounded-lg bg-background-light dark:bg-background-dark p-4 shadow-sm transition-all hover:shadow-md dark:hover:bg-gray-800/50">
+                            <div class="aspect-video w-full overflow-hidden rounded-lg">
+                                <img alt="Tech" class="h-full w-full object-cover"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5edAbnosCnEa2-if7K33o-Zqwov0YN_az_g7NtZZy-VvgnV6lN98DRBvLQMDxM31vT2Ju7baNbWqM90pwOyYUN7GwAustjBFVf8sYphNcxnat7TJ8uClgX9DdEGAaZ0ogNguSkJlCfY7mjdwbXk2FgeepKJRWoh5nQw1kw7bdh0k-8u54jerpA_Hh9Lfc8yBj5azsZCGOZnPm3NtqHUBOU-ufK6vCBzOvT1CmtM366l67E92VCOVUb53xyElgxxJLTnWN8r0Lp9bt" />
+                            </div>
+                            <div>
+                                <p class="text-lg font-bold text-gray-900 dark:text-white">Tech</p>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Keep up with the latest tech news
+                                    and gadgets.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer
+                class="w-full border-t border-gray-200/50 dark:border-gray-700/50 bg-background-light dark:bg-background-dark py-10">
+                <div class="mx-auto flex max-w-5xl flex-col items-center gap-8 px-4 text-center">
+                    <div
+                        class="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-sm text-gray-600 dark:text-gray-400">
+                        <a class="hover:text-primary" href="#">Privacy Policy</a>
+                        <a class="hover:text-primary" href="#">Terms of Service</a>
+                        <a class="hover:text-primary" href="#">Contact Us</a>
+                    </div>
+                    <div class="flex justify-center gap-6">
+                        <a class="text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-primary" href="#">
+                            <svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-primary" href="#">
+                            <svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-primary" href="#">
+                            <svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">© 2024 StreamCore. All rights reserved.</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+</html>
